@@ -1,27 +1,38 @@
-/* FONT FAMILY */
-@font-face{
-    font-family: Dosis;
-    src: url(./Dosis-SemiBold.ttf);
-}
+/* GOOGLE FONT FAMILY */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 
+/*****************
+    CSS RESET 
+******************/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Dosis;
+    font-family: 'Ubuntu', sans-serif;
 }
 
+/*****************
+    BODY STYLING 
+******************/
+
 body{
-    width: 100%;
-    height: 100vh;
+    width: 100vw;
+    height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(55deg, #000000e3, #141d1dd5);
+    background: linear-gradient(109.6deg, #242d39 11.2%, #10253c 51.2%, #000000 98.6%);
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
 }
 
 .calculator{
+    width: 30vw;
+    height: 100%;
+    margin-top: 2rem;
     border: 1px solid silver;
     text-align: center;
     color: #f0ffff;
@@ -31,10 +42,11 @@ body{
     box-shadow: 2px 4px 5px #fffafa9d;
 }
 h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
 }
 input{
-    width: 320px;
+    width: 380px;
     border: none;
     border-radius: 10px;
     padding: 20px;
@@ -65,8 +77,13 @@ button{
     text-align: center;
 }
 .equal{
-    background-color: #dd663be7;
+    background-color: #ff5757;
 }
 .operator{
-    color: hwb(16 34% 1% / 0.815);
+    color: #fc8357d0;
+}
+.copyright{
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #f0ffff;
 }
